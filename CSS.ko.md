@@ -1,5 +1,5 @@
 # CSS cheat sheet
-Tags are arranged alphabetically.
+lists are arranged alphabetically.
 
 ---
 ### a
