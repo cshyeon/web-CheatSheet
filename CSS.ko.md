@@ -7,7 +7,9 @@ Lists are arranged alphabetically.
 
 - [class 선택자](#class-selector)
 - [id 선택자](#id-selector)
-
+- [tag 선택자](#tag-selector)
+- [descendant 자손 선택자](#descendant-selector)
+- [복수 선택자](#multiple-selector)
 
 ## index
 | 알파벳 | 한글 자음|
@@ -57,6 +59,19 @@ text-decoration:none;
 ```
 
 ### <a id="d-index"></a>d
+- <a id="descendant-selector"></a>descendant(자손) 선택자
+```html
+<div id="div-id">
+    <a href="#">선택 됨</a>
+    <ul>
+        <li> <a href="#">이것도 선택 됨</a> </li>
+    <ul>
+</div>
+<style>
+    /* div 내의 모든 a tag들이 선택됨 */
+    div a { color: red; }
+</style>
+```
 ### <a id="e-index"></a>e
 ### <a id="f-index"></a>f
 ### <a id="g-index"></a>g
@@ -91,6 +106,15 @@ text-decoration:none;
 ### <a id="r-index"></a>r
 ### <a id="s-index"></a>s
 ### <a id="t-index"></a>t
+- <a id="tag-selector"></a>tag 선택자
+```html
+<div id="mydiv"></div>
+<style>
+    /* 모든 div tag에 Css 적용 */
+    div { text-align: center; }
+</style>
+```
+
 ### <a id="u-index"></a>u
 ### <a id="v-index"></a>v
 ### <a id="w-index"></a>w
@@ -123,6 +147,17 @@ text-decoration:none;
 
 img { max-width: 100%; }
 ```
+
+- <a id="multiple-selector"></a>복수(다중) 선택자
+```html
+<div id="mydiv"></div>
+<span class="myspan"></span>
+<style>
+    /* 모든 div와 추가로 모든 myspan클래스 엘레먼트가 선택됨*/
+    div, .myspan { text-align: center; }
+</style>
+```
+
 
 ### <a id="kr-sa-index"></a>ㅅ
 ### <a id="kr-a-index"></a>ㅇ
