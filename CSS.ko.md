@@ -3,9 +3,33 @@ Lists are arranged alphabetically.
 
 ---
 
+## 기본 CSS
+
+- [class 선택자](#class-selector)
+- [id 선택자](#id-selector)
+
+
+## index
 - a 태그 사용시 텍스트 밑줄 제거
 ```css
 text-decoration:none;
+```
+
+- <a id="class-selector"></a>class 선택자
+```html
+<div class="div-class"></div>
+<style>
+    /* 클래스명이 'div-class'인 모든 엘리먼트 */
+    .div-class { }
+</style>
+```
+
+- <a id="id-selector"></a>id 선택자
+```html
+<div id="div-id"></div>
+<style>
+    #div-id { }
+</style>
 ```
 
 - pseudo class selector
@@ -35,3 +59,4 @@ text-decoration:none;
 
 img { max-width: 100%; }
 ```
+
